@@ -1,0 +1,882 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Overpass' , sans-serif;
+    background-color: hsl(240, 8%, 91%);
+    overflow-x: hidden;
+}
+
+.top__section{
+    background-image: linear-gradient(to right , hsl(13, 100%, 72%) , hsl(353, 100%, 62%));
+    position: relative;
+    overflow: hidden;
+    height: 30rem;
+    border-bottom-left-radius: 100px;
+}
+
+.intro__img{
+    width: 150rem;
+    height: auto;
+    position: absolute;
+    top: -60rem;
+    left: -20rem;
+}
+
+nav{
+    display: flex;
+    padding: 0rem 6rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+.burger{
+    display: none;
+}
+
+.dropdown{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    margin-left: -10rem;
+}
+
+.product{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu'; 
+    font-weight: 600;
+    z-index: 5;
+}
+
+.product__dropdown{
+    padding: 2rem;
+    list-style: none;
+    position: absolute;
+    top: 5rem;
+    left: 20.5rem;
+    z-index: 10;
+    line-height: 2rem;
+    background-color: white;
+    width: 10rem;
+    border-radius: 10px;
+    opacity: 0;
+    cursor:default;
+}
+
+.product__item__link{
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+.company{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu'; 
+    font-weight: 600;
+    z-index: 5;
+}
+
+.company__dropdown{
+    padding: 2rem;
+    list-style: none;
+    position: absolute;
+    top: 5rem;
+    left: 29rem;
+    z-index: 10;
+    line-height: 2rem;
+    background-color: white;
+    width: 10rem;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.company__item__link{
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+.connect{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    z-index: 5;
+    font-family: 'Ubuntu'; 
+    font-weight: 600;
+    z-index: 5;
+}
+
+.connect__dropdown{
+    padding: 2rem;
+    list-style: none;
+    position: absolute;
+    top: 5rem;
+    left: 37.5rem;
+    z-index: 10;
+    line-height: 2rem;
+    background-color: white;
+    width: 10rem;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.connect__item__link{
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+.login__buttons{
+    z-index: 5;
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.login__link{
+    text-decoration: none;
+    color: white;
+    z-index: 5;
+    font-family: 'Ubuntu'; 
+    font-weight: 600;
+}
+
+.signup{
+    padding: 1rem 3rem;
+    border: none;
+    border-radius:50px ;
+    background-color: white;
+    cursor: pointer;
+}
+
+.signup__link{
+    text-decoration: none;
+    color:hsl(13, 100%, 72%);
+    font-family: 'Ubuntu'; 
+    font-weight: 600;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 5rem;
+    height: 15rem;
+}
+
+.intro__title{
+    z-index: 3;
+    font-size: 3rem;
+}
+
+.intro__p{
+    z-index: 5;
+    margin-top: -2rem;
+}
+
+.intro__btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    width: 22rem;
+}
+
+.start__intro{
+    padding: 1rem 2.6rem;
+    border: none;
+    border-radius:50px ;
+    background-color: white;
+    cursor: pointer;
+}
+
+.start__intro__link{
+    text-decoration: none;
+    color:hsl(13, 100%, 72%);
+    font-family: 'Ubuntu'; 
+    font-weight: 600;
+}
+
+.learn__intro{
+    padding: 1rem 3rem;
+    border: 2px solid white;
+    border-radius:50px ;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.learn__intro__link{
+    text-decoration: none;
+    color:white;
+    font-family: 'Ubuntu'; 
+    font-weight: 600;
+}
+
+.future__title__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0rem 0rem 0rem;
+    color:hsl(237, 17%, 21%);
+}
+
+.future__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.future__posts{
+    padding: 0rem 5rem;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; 
+    height: 17rem;
+    width: 41rem;
+    margin-top: -10rem;
+}
+
+.post__one{
+    color:hsl(237, 17%, 21%) ;
+}
+
+.post__one__h{
+    padding:2rem 0rem;
+}
+
+.post__one__p{
+    padding:0rem 0rem 2rem 0rem;
+    line-height: 1.5rem;
+}
+
+.post__two{
+    color:hsl(237, 17%, 21%) 
+}
+
+.post__two__h{
+    padding:2rem 0rem;
+}
+
+.post__two__p{
+    line-height: 1.5rem;
+}
+
+.editor__img{
+    width: 50rem;
+    height: auto;
+    margin-right: -10rem;
+}
+
+.future__img__phone{
+    display: none;
+}
+
+.phone__section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(237, 17%, 21%);
+    color: white;
+    padding: 0rem 5rem;
+    background-image: url(./images/bg-pattern-circles.svg);
+    background-position-y:-45rem ;
+    background-position-x:-6rem ;
+    background-repeat: no-repeat;
+    height: 20rem;
+    margin-top: 2rem;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.phone__h{
+    margin-bottom: 1rem;
+}
+
+.phone__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30rem;
+}
+
+.laptop__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.laptop__posts{
+    padding: 0rem 5rem;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; 
+    height: 17rem;
+    width: 41rem;
+    margin-top: -10rem;
+}
+
+.laptop__img{
+    width: 60rem;
+    height: auto;
+    margin-left: -15rem;
+}
+
+.laptop__post__one{
+    color:hsl(237, 17%, 21%) ;
+}
+
+.laptop__post__one__h{
+    padding:2rem 0rem;
+}
+
+.laptop__post__one__p{
+    padding:0rem 0rem 2rem 0rem;
+    line-height: 1.5rem;
+}
+
+.laptop__post__two{
+    color:hsl(237, 17%, 21%) 
+}
+
+.laptop__post__two__h{
+    padding:2rem 0rem;
+}
+
+.laptop__post__two__p{
+    line-height: 1.5rem;
+}
+
+.laptop__img__container__phone{
+    display: none;
+}
+
+footer{
+    width: 100%;
+    height: 25rem;
+    padding: 6rem;
+    background-color:hsl(237, 17%, 21%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top-right-radius: 100px;
+}
+
+.part__one{
+    margin: -0.6rem 0rem 0rem 0rem;
+}
+
+.product__title{
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.company__title{
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.connect__title{
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.product__footer__list{
+    list-style: none;
+    line-height: 2rem;
+}
+
+.company__footer__list{
+    list-style: none;
+    line-height: 2rem;
+}
+
+.connect__footer__list{
+    list-style: none;
+    line-height: 2rem;
+}
+
+.footer__product__link{
+    text-decoration:none ;
+    color: white;
+}
+
+.footer__company__link{
+    text-decoration:none ;
+    color: white;
+}
+
+.footer__connect__link{
+    text-decoration:none ;
+    color: white;
+}
+
+/*Email Inquiry*/
+.email__inquiry{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 35rem;
+}
+
+.contact__form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 30rem;
+}
+
+.name{
+    padding: 1rem 3rem;
+    border: none;
+    border-radius:20px ;
+    background-color: white;
+    cursor:text;
+    font-family: "Ubuntu";
+    outline: none;
+}
+
+.mail{
+    padding: 1rem 3rem;
+    border: none;
+    border-radius:20px ;
+    background-color: white;
+    cursor:text;
+    font-family: "Ubuntu";
+    outline: none;
+}
+
+.subject{
+    padding: 1rem 3rem;
+    border: none;
+    border-radius:20px ;
+    background-color: white;
+    cursor:text;
+    font-family: "Ubuntu";
+    outline: none;
+}
+
+.input{
+    padding: 3rem 1rem;
+    border: none;
+    border-radius:20px ;
+    background-color: white;
+    cursor:text;
+    font-family: "Ubuntu";
+    outline: none;
+}
+
+.send__email__btn{
+    padding: 1rem 3rem;
+    border: none;
+    border-radius:20px ;
+    background-image: linear-gradient(to right , hsl(13, 100%, 72%) , hsl(353, 100%, 62%));
+    cursor:pointer;
+    font-family: "Ubuntu";
+    outline: none;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+
+/*Hover States*/
+
+.footer__product__link:hover{
+    border-bottom:solid 1px white;
+}
+
+.footer__company__link:hover{
+    border-bottom:solid 1px white;
+}
+
+.footer__connect__link:hover{
+    border-bottom:solid 1px white;
+}
+
+.product__item__link:hover{
+    font-weight: 600;
+}
+
+.company__item__link:hover{
+    font-weight: 600;
+}
+
+.connect__item__link:hover{
+    font-weight: 600;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width:375px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .top__section{
+        overflow: visible;
+    }
+
+    .intro__img{
+        display: none;
+    }
+
+    .burger{
+        display: flex;
+    }
+    .dropdown{
+        display: none;
+    }
+    
+    .login__buttons{
+        display: none;
+    }
+
+    nav{
+        padding: 1.5rem;
+        
+    }
+
+    .burger__btn{
+       background-color: transparent;
+       border: none;
+       position: relative;
+       cursor:pointer;
+       z-index: 6;
+    }
+
+    .burger__menu{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        z-index: 15;
+        top: 6rem;
+        right:2rem ;
+        background-color: white;
+        padding: 2rem;
+        width: 20rem;
+        height: auto;
+        border-radius: 10px;
+        display: none;
+    }
+
+    .burger__menu__show{
+        display: flex;
+    }
+
+    .product__dropdown__brgr{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        line-height: 1.5rem;
+        background-color: hsl(240, 2%, 79%);
+        border-radius: 10px;
+        width: 15rem;
+        display: none;
+    }
+
+    .product__dropdown__brgr__show{
+        display: flex;
+    }
+
+    .company__dropdown__brgr{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        line-height: 1.5rem;
+        background-color: hsl(240, 2%, 79%);
+        border-radius: 10px;
+        width: 15rem;
+        display: none;
+    }
+
+    .company__dropdown__brgr__show{
+        display: flex;
+    }
+
+    .connect__dropdown__brgr{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        line-height: 1.5rem;
+        background-color: hsl(240, 2%, 79%);
+        border-radius: 10px;
+        width: 15rem;
+        display: none;
+    }
+
+    .connect__dropdown__brgr__show{
+        display: flex;
+    }
+
+    .product__brgr{
+        background-color: transparent;
+        border: none;
+        font-family: 'Ubuntu';
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 0.5rem 3rem;
+    }
+    .company__brgr{
+        background-color: transparent;
+        border: none;
+        font-family: 'Ubuntu';
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 0.5rem 3rem;
+    }
+    .connect__brgr{
+        background-color: transparent;
+        border: none;
+        font-family: 'Ubuntu';
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 0.5rem 3rem;
+    }
+
+    .product__item__link__brgr{
+        text-decoration: none;
+        color: black;
+    }
+
+    .company__item__link__brgr{
+        text-decoration: none;
+        color: black;
+    }
+
+    .connect__item__link__brgr{
+        text-decoration: none;
+        color: black;
+    }
+
+    .hr__brgr{
+        width: 15rem;
+        color: hsl(240, 6%, 90%);
+        margin: 1rem 0rem;
+    }
+
+    .login__buttons__brgr{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        height: 7rem;
+    }
+
+    .login__brgr{
+        background-color: transparent;
+        border: none;
+    }
+
+    .login__link__brgr{
+        text-decoration: none;
+        color: hsl(237, 17%, 21%);
+        font-family: 'Ubuntu';
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .signup__brgr{
+        padding: 1rem 3rem;
+        border: none;
+        border-radius:50px ;
+        background-image: linear-gradient(to right , hsl(13, 100%, 72%) , hsl(353, 100%, 62%));
+        cursor: pointer;
+    }
+
+    .signup__link__brgr{
+        text-decoration: none;
+        color:white;
+        font-family: 'Overpass'; 
+        font-weight: 600;
+    }
+
+    .intro{
+        margin-top: 2rem;
+        height: 20rem;
+        text-align: center;
+    }
+
+    .intro__title{
+        z-index: 5;
+        font-size: 2rem;
+    }
+    
+    .intro__p{
+        z-index: 5;
+        margin-top: -2rem;
+        font-size: 1.1rem;
+        padding: 0rem 2.7rem;
+    }
+
+    .intro__btns{
+        width: 15rem;
+    }
+
+    .start__intro{
+        padding: 1rem 1rem;
+        border: none;
+        border-radius:50px ;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .learn__intro{
+        padding: 1rem 1rem;
+        border: 2px solid white;
+        border-radius:50px ;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .future__img{
+        display: none;
+    }
+
+    .future__content{
+        flex-direction: column;
+    }
+
+    .editor__img__phone{
+        width: 20rem;
+        height: auto;
+    }
+
+    .future__posts{
+        width: 30rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .future__img__phone{
+        display: flex;
+        margin-top: 2rem;
+    }
+
+    .phone__section{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 40rem;
+        margin-top: 30rem;
+    }
+
+    .phone__img{
+        width: 25rem;
+        height: auto;
+        margin-top: -10rem;
+    }
+
+    .phone__text{
+        width: 20rem;
+        text-align: center;
+    }
+
+    .laptop__content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .laptop__posts{
+        width: 30rem;
+        margin-top: 2rem;
+    }
+
+    .laptop__img__container{
+        display: none;
+    }
+
+
+    .laptop__img__container__phone{
+        display: flex;
+    }
+
+    footer{
+        height: 60rem;
+        margin-top:25rem ;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+/*Active Dropdown*/
+
+.product__dropdown__active{
+    opacity: 1;
+}
+
+.company__dropdown__active{
+    opacity: 1;
+}
+
+.connect__dropdown__active{
+    opacity: 1;
+}
+
+.product__item__link__active{
+    cursor: pointer;
+}
+
+.company__item__link__active{
+    cursor: pointer;
+}
+
+.connect__item__link__active{
+    cursor: pointer;
+}
+
+/*Rotate Arrow*/
+.arrow__rotated{
+    transform: rotate(180deg);
+}
+
+
+
